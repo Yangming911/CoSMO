@@ -1,0 +1,32 @@
+# Core runtime (Python 3.8, matching the original experiments)
+numpy==1.24.4
+numpy-quaternion==2023.0.4
+scipy==1.10.1
+scikit-image==0.21.0
+scikit-learn==1.3.2
+opencv-python==4.10.0.84
+pandas==2.0.3
+matplotlib==3.7.5
+numba==0.58.1
+PyYAML==6.0.3
+torch==2.4.1
+torchvision==0.19.1
+rerun-sdk==0.16.1
+spock-config==3.1.0
+tabulate==0.9.0
+transforms3d==0.4.2
+pybind11==3.0.2
+scikit-build-core==0.12.2
+
+# Vision backends
+fvcore==0.1.5.post20221221
+inference-gpu==0.37.1
+supervision==0.25.1
+transformers==4.46.3
+mobile-sam @ git+https://github.com/ChaoningZhang/MobileSAM.git@b01a9ccef3b9e10b099b544efe004d0871802c3b9e
+detectron2 @ git+https://github.com/facebookresearch/detectron2.git@fd27788985af0f4ca800bca563acdb700bb890e2
+open-clip-torch @ git+https://github.com/xb534/SED.git@db20d93c0ec8b0ce7fae267a10f826dfc7da15f5#subdirectory=open_clip
+
+# Install habitat-sim with the CUDA build appropriate for the host system.
+habitat-lab==0.2.420230405
+habitat-sim==0.2.2

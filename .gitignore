@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+
+# External assets are intentionally not part of this minimal code release.
+datasets/
+weights/
+yolov7/
+*.pt
+
+# Generated files.
+results/
+outputs/
+logs/
+*.log
+*.csv

@@ -1,0 +1,33 @@
+MappingConf: # [all in feature_map.py]
+  n_points: 600  # Number of grid cells per dim
+  size: 60 # in meters, size of the map per dim
+  agent_radius: 0.2  # in meters
+  blur_kernel_size: 0.05  # in meters 0.5 default
+  obstacle_map_threshold: 0.4 # in occupancy value
+  fully_explored_threshold: 0.2  #
+  checked_map_threshold: 0.2  #
+  depth_factor: 0.01  #
+  gradient_factor: 0.2
+  optimal_object_distance: 1.0
+  optimal_object_factor: 1.5
+  obstacle_min: -0.6
+  obstacle_max: 0.5
+  filter_stairs: True
+  floor_level: -0.88
+  floor_threshold: -1.1
+  clip_model_type: convnext  # convnext or gclip (navigation backbone)
+  use_gclip_for_obstacles: False  # dual-model: add GCLIP for obstacle CP
+  use_clip_semantic_nav_map: False
+  clip_semantic_sim_threshold: 0.0
+  use_yolo_obstacle_map: True
+  yolo_window_size: 50
+  use_clip_cp_obstacle_map: False
+  clip_cp_threshold: 0.05
+  clip_cp_use_oacp: False
+  clip_cp_target_coverage: 0.9
+  clip_cp_window_size: 100
+  use_yolo_cp_obstacle_map: False
+  yolo_cp_threshold: 0.5
+  yolo_cp_target_coverage: 0.9
+  yolo_cp_window_size: 200
+  yolo_cp_frustum_max_depth: 5.0

@@ -1,0 +1,19 @@
+EvalConf:
+  multi_object: false
+  max_steps: 2500
+  max_dist: 1.0
+  is_gibson: False
+  dataset_type: "mp3d"
+  object_nav_path: "datasets/objectnav_mp3d_v1/val/content/"
+  scene_path: "datasets/scene_datasets/"
+  log_rerun: False
+  use_pointnav: False
+  square_im: True
+  results_path: "results/mp3d_baseline_full_d6"
+  ep_end: 999999
+
+config: [
+  ./controller_habitat.yaml,
+  ./mapping_conf_sim.yaml,
+  ./planning_conf.yaml
+]
