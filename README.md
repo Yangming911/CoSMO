@@ -52,11 +52,6 @@ cosmo_code/
 └── requirements.txt
 ```
 
-The navigation map uses ConvNeXt-Large CLIP features. Conditions B, D, and F
-add a GCLIP ViT-B/16 feature map for semantic obstacle reasoning. The default
-configuration uses YOLOv7 for ObjectNav target detection and MobileSAM for
-instance masks. Condition F additionally runs Grounding DINO as the noisy
-expert.
 
 ## Installation
 
